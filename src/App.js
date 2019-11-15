@@ -11,12 +11,20 @@ function App() {
 
   //button functionality
 
-  const homeTouchdown = () => setHomeScore(homeScore + 7);
-  const homeFieldGoal = () => setHomeScore(homeScore + 3);
+  const homeTouchdown = () => {
+    setHomeScore(homeScore + 7);
+  }
+  const homeFieldGoal = () => {
+    setHomeScore(homeScore + 3);
+  }
 
-  const awayTouchdown = () => setAwayScore(awayScore + 7);
-  const awayFieldGoal = () => setAwayScore(awayScore + 3);
-
+  const awayTouchdown = () => {
+    setAwayScore(awayScore + 7);
+  }
+  const awayFieldGoal = () => {
+    setAwayScore(awayScore + 3);
+  }
+  
   return (
     <div className="container">
       <section className="scoreboard">
